@@ -1,0 +1,252 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	background: $gray-dark;
+	font-size: $font-size-base;
+	-webkit-backface-visibility: hidden !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+*{font-family: 'quicksandregular', helvetica;}
+#beastMain{
+	background: $color-white;
+	max-width: 76.8rem;
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	box-shadow: 0 0 2rem rgba(0,0,0,1);
+	header{
+		z-index: 100;
+    		position: relative;
+		div{
+			height: 3rem;
+			background: #333;
+			text-align: center;
+			color: $color-white;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			svg{
+				width: 1.6rem;
+				height: 1.6rem;
+				display: block;
+				fill: #fff;
+				margin-right: 1rem;
+			}
+		}
+		nav{
+			height: 5rem;
+			padding: 1rem;
+			box-sizing: border-box;
+			background: $color-white;
+			box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			h1{
+				margin: 0;
+				font-size: 2rem;
+				input{
+					background: $gray;
+					display: inline-block;
+					padding: 0.6rem 1rem;
+					font-size: 1.6rem;
+					color: $color-white;
+					border-radius: 0.5rem;
+					border: none;
+					width: 2rem;
+					text-align: center;
+				}
+			}
+			svg{
+				width: 3rem;
+				height: 3rem;
+				display: block;
+				fill: #dedede;
+				&.active{
+					fill: $brand-primary;
+				}
+			}
+		}
+	}
+	#monList{
+		flex: 1;
+		overflow: auto;
+		.error{
+			height: 30rem;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: $gray-light;
+			h1{
+				font-size: 3rem;
+				color: $gray;
+				margin: 0 0 1rem;
+			}
+		}
+		.cr-group{
+			.cr-header{
+				cursor: pointer;
+				border-bottom: 0.1rem solid rgba(0,0,0,0.15);
+				padding: 1rem;
+				background: $brand-success;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				h2{
+					margin: 0;
+					color: $color-white;
+					text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+				}
+				span{
+					background: darken($brand-success, 10%);
+					display: inline-block;
+					padding: 0.2rem 0.6rem;
+					font-size: 1.4rem;
+					color: $color-white;
+					border-radius: 0.5rem;
+				}
+			}
+			ul{
+				display: none;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					cursor: pointer;
+					padding: 1rem;
+					box-sizing: border-box;
+					height: 4rem;
+					border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					h3{
+						margin: 0;
+					}
+					div{
+						display: flex;
+						svg{
+							width: 2.4rem;
+							height: 2.4rem;
+							display: block;
+							fill: $gray-light;
+							margin-left: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	#beastModal{
+		position: absolute;
+		opacity: 0;
+		display: none;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: red;
+		z-index: 100;
+		flex-direction: column;
+		background: #f0f0e1;
+		header{
+			flex: 0 0 3.5rem;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			padding: 1rem;
+			box-sizing: border-box;
+			h1{
+				margin: 0;
+				font-size: 2.4rem;
+			}
+		}
+		.beast-body{
+			flex: 1;
+			overflow: auto;
+			padding: 0 1rem 1rem;
+			font-size: 1.2rem;
+			font-family: quicksandregular;
+			&#currentBlock{
+				margin-right: 1rem;
+			}
+			&::-webkit-scrollbar {
+	 			display: none;
+			}
+			&#extraBlock{
+				background: #e5e5e5;
+			}
+			h1{
+				font-size: 1.6em;
+	    			margin: 0;
+			}
+			h2{
+			    	font-size: 1.4rem;
+				border-bottom: 0.1rem solid $gray-light;
+				padding: 0.5rem 0 1rem;
+				margin: 0 0 0.5rem;;
+			}
+			h3{
+				padding-top: 1rem;
+				margin: 0;
+				font-size: 1.8rem;
+				border-top: 0.1rem solid $gray-light;
+			}
+			h4{
+				margin: 1rem 0 0;
+				font-family: 'quicksandbold';
+				span{
+					font-family: 'quicksandregular', helvetica;
+				}
+			}
+			ul{
+				list-style: none;
+				display: flex;
+				padding: 0;
+				margin: 1rem 0 0;
+				padding: 0.5rem 0;
+				border-bottom: 0.1rem solid $gray-light;
+				border-top: 0.1rem solid $gray-light;
+				li{
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					font-size: 1.2rem;
+					font-weight: bold;
+					font-family: 'quicksandbold';
+					span{
+						font-weight: normal;
+						font-family: 'quicksandregular', helvetica;
+					}
+				}
+			}
+			p{margin: 0.5rem 0}
+		}
+		footer{
+			flex: 0 0 4rem;
+			display: flex;
+			button{
+				background: $gray-dark;
+				flex: 1;
+				text-align: center;
+				border: none;
+				font-size: 2rem;
+				color: $color-white;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+	<meta name="theme-color" content="#3d8655">
+	<title>Wild Shape</title>
+	<link rel="stylesheet" href="css/screen.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<section id="beastMain">
+		<header>
+			<div>
+				<svg><use xlink:href="css/fonts/icons.svg#icon-paw" /></svg>
+				Wild Shape
+			</div>
+			<nav>
+				<h1>
+					Druid Level
+					<input type="text" id="currentLvl" value="2">
+				</h1>
+				<svg id="moonCircle"><use xlink:href="css/fonts/icons.svg#icon-moon" /></svg>
+			</nav>
+		</header>
+		<div id="monList"></div>
+		<section id="beastModal">
+			<header><h1></h1></header>
+			<div class="beast-body"></div>
+			<footer>
+				<button id="modalClose" type="button">Close</button>
+			</footer>
+		</section>
+	</section>
+</body>
+</html>

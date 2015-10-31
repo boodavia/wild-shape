@@ -1,0 +1,20 @@
+{
+  "name": "wild-shape",
+  "version": "1.0.0",
+  "description": "Manage your druid wild shape options",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-notify": "^1.6.0",
+    "gulp-autoprefixer": "^1.0.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp": "^3.9.0",
+    "gulp-plumber": "^0.6.5"
+  },
+  "devDependencies": {},
+  "author": "Boodavia@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "ddd"
+  }
+}

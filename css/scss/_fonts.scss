@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'quicksanditalic';
+    src: url('fonts/quicksand-italic-webfont.eot');
+    src: url('fonts/quicksand-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-italic-webfont.woff') format('woff'),
+         url('fonts/quicksand-italic-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-italic-webfont.svg#quicksanditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('fonts/quicksand-bold-webfont.eot');
+    src: url('fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.eot');
+    src: url('fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$color-campaign: #5CC180;
+$color-encounter: #9871E2;
+$color-combat: #E5A459;
+$color-monster: #B25950;
+$color-player: #69A0DF;
+$color-npc: #71A89D;
+$color-srd: #555555;
+
+$color-white: #fff;
+
+$brand-primary:         $color-player !default;
+$brand-success:          $color-campaign !default;
+$brand-info:                $color-npc !default;
+$brand-warning:         $color-combat !default;
+$brand-danger:           $color-monster !default;
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 65.7%) !default; // #777
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base: 10px !default;
