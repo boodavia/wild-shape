@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compendium version="1" auto_indent="YES">
+	<monster>
+		<name>Gromflomite</name>
+		<size>Large</size>
+		<type>beast</type>
+		<alignment>unaligned</alignment>
+		<ac>15 (natural armor)</ac>
+		<hp>37 (5d10 + 10)</hp>
+		<speed>30 ft.</speed>
+		<fly>40 ft.</fly>
+		<burrow></burrow>
+		<climb></climb>
+		<swim></swim>
+		<str>14</str><dex>16</dex><con>12</con><int>8</int><wis>8</wis><cha>5</cha>
+		<save></save>
+		<skill>Acrobatics +5</skill>
+		<resist></resist>
+		<vulnerable></vulnerable>
+		<immune></immune>
+		<conditionImmune></conditionImmune>
+		<senses></senses>
+		<passive>9</passive>
+		<languages></languages>
+		<cr>2</cr>
+		<trait>
+			<trait-name>Pounce</trait-name>
+			<text>If the Gazorpazorpfield moves at least 30 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the Gazorpazorpfield can make one bite attack against it as a bonus action.</text>
+		</trait>
+		<action>
+			<action-name>Laser Blast</action-name>
+			<text>Ranged Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) fire damage.</text>
+		</action>
+		<action>
+			<action-name>Claw</action-name>
+			<text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.</text>
+		</action>
+		<spells></spells>
+	</monster>
+	<monster>
+		<name>Mr. Poopybutthole</name>
+		<size>Tiny</size>
+		<type>beast</type>
+		<alignment>unaligned</alignment>
+		<ac>12</ac>
+		<hp>37 (5d10 + 10)</hp>
+		<speed>30 ft.</speed>
+		<fly></fly>
+		<burrow></burrow>
+		<climb></climb>
+		<swim></swim>
+		<str>9</str><dex>14</dex><con>14</con><int>8</int><wis>8</wis><cha>14</cha>
+		<save></save>
+		<skill></skill>
+		<resist></resist>
+		<vulnerable>Beth, Bullets</vulnerable>
+		<immune></immune>
+		<conditionImmune></conditionImmune>
+		<senses></senses>
+		<passive>9</passive>
+		<languages></languages>
+		<cr>1</cr>
+		<trait>
+			<trait-name>Good Memories</trait-name>
+			<text>Only good times when Mr. Poopybutthole is around.</text>
+		</trait>
+		<action>
+			<action-name>Punch</action-name>
+			<text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) blugeoning damage.</text>
+		</action>
+		<spells></spells>
+	</monster>
+	<monster>
+		<name>Gazorpazorpfield</name>
+		<size>Small</size>
+		<type>beast</type>
+		<alignment>unaligned</alignment>
+		<ac>15 (natural armor)</ac>
+		<hp>19 (3d10 + 3)</hp>
+		<speed>30 ft.</speed>
+		<fly></fly>
+		<burrow></burrow>
+		<climb></climb>
+		<swim></swim>
+		<str>14</str><dex>16</dex><con>12</con><int>10</int><wis>8</wis><cha>5</cha>
+		<save></save>
+		<skill>Athletics +5</skill>
+		<resist></resist>
+		<vulnerable></vulnerable>
+		<immune></immune>
+		<conditionImmune></conditionImmune>
+		<senses></senses>
+		<passive>9</passive>
+		<languages></languages>
+		<cr>1/2</cr>
+		<trait>
+			<trait-name>Pounce</trait-name>
+			<text>If the Gazorpazorpfield moves at least 30 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the Gazorpazorpfield can make one bite attack against it as a bonus action.</text>
+		</trait>
+		<action>
+			<action-name>Bite</action-name>
+			<text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.</text>
+		</action>
+		<action>
+			<action-name>Claw</action-name>
+			<text>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.</text>
+		</action>
+		<spells></spells>
+	</monster>
+	<monster>
+		<name>Squanchy</name>
+		<size>Small</size>
+		<type>beast</type>
+		<alignment>unaligned</alignment>
+		<ac>13</ac>
+		<hp>19 (3d10 + 3)</hp>
+		<speed>30 ft.</speed>
+		<fly></fly>
+		<burrow></burrow>
+		<climb></climb>
+		<swim></swim>
+		<str>8</str><dex>16</dex><con>12</con><int>10</int><wis>10</wis><cha>12</cha>
+		<save></save>
+		<skill>+ 5 Squanch</skill>
+		<resist>Squanches</resist>
+		<vulnerable>Squanches</vulnerable>
+		<immune></immune>
+		<conditionImmune></conditionImmune>
+		<senses>Squanchvision 60ft</senses>
+		<passive>10</passive>
+		<languages>Squanchese</languages>
+		<cr>1/4</cr>
+		<trait>
+			<trait-name>Squanch Out</trait-name>
+			<text>Once per squanch Squanchy can assume the form of a Ultra-Squanch adding +5 to his Strenth and +5 to his Squanch.</text>
+		</trait>
+		<action>
+			<action-name>Claw</action-name>
+			<text>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d4+3) squanch damage.</text>
+		</action>
+	</monster>
+
+	<monster>
+		<name>Mr. Meeseeks</name>
+		<size>Medium</size>
+		<type>beast</type>
+		<alignment>unaligned</alignment>
+		<ac>11</ac>
+		<hp>19 (3d10 + 3)</hp>
+		<speed>30 ft.</speed>
+		<fly></fly>
+		<burrow></burrow>
+		<climb></climb>
+		<swim></swim>
+		<str>10</str><dex>12</dex><con>16</con><int>10</int><wis>8</wis><cha>5</cha>
+		<save></save>
+		<skill></skill>
+		<resist></resist>
+		<vulnerable>Jerry</vulnerable>
+		<immune></immune>
+		<conditionImmune>Sleep</conditionImmune>
+		<senses></senses>
+		<passive>15</passive>
+		<languages></languages>
+		<cr>1/8</cr>
+		<trait>
+			<trait-name>Help</trait-name>
+			<text>Mr. Meeseeks has advantage on checks to aid others</text>
+		</trait>
+		<trait>
+			<trait-name>Pack Tactics</trait-name>
+			<text>Mr. Meeseeks has advantage on an attack roll against a creature if at least one other Mr. Meeseeks is within 5 ft. of the creature and the ally isn't incapacitated.</text>
+		</trait>
+		<action>
+			<action-name>Punch</action-name>
+			<text>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 4 (1d6) blugeoning damage.</text>
+		</action>
+	</monster>
+
+	<monster>
+		<name>Pencilvestyr</name>
+		<size>Tiny</size>
+		<type>beast</type>
+		<alignment>unaligned</alignment>
+		<ac>13</ac>
+		<hp>4 (1d8)</hp>
+		<speed>20 ft.</speed>
+		<fly></fly>
+		<burrow></burrow>
+		<climb></climb>
+		<swim></swim>
+		<str>8</str><dex>16</dex><con>10</con><int>10</int><wis>10</wis><cha>16</cha>
+		<save></save>
+		<skill>+10 Deception</skill>
+		<resist></resist>
+		<vulnerable>Lasers</vulnerable>
+		<immune></immune>
+		<conditionImmune></conditionImmune>
+		<senses></senses>
+		<passive>10</passive>
+		<languages></languages>
+		<cr>0</cr>
+		<trait>
+			<trait-name>Parasite</trait-name>
+			<text>"Remember that time..."</text>
+		</trait>
+		<action>
+			<action-name>Bite</action-name>
+			<text>Melee Weapon Attack: -1 to hit, reach 5 ft., one target. Hit: 4 (1d4) piercing damage.</text>
+		</action>
+	</monster>
+</compendium>

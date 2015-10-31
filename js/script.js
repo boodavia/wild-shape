@@ -56,7 +56,7 @@ function monsterList(cr){
 	} else {
 		$.ajax({
 			type: "get",
-			url: "js/beasts.xml",
+			url: "beast_data/beasts.xml",
 			dataType: "xml",
 			success: function(xml){
 				var monList = '';
@@ -140,7 +140,7 @@ function addMonsters(list){
 function monsterBlock(name){
 	$.ajax({
 		type: "get",
-		url: "js/beasts.xml",
+		url: "beast_data/beasts.xml",
 		dataType: "xml",
 		success: function(xml){
 			var items = $(xml).find("monster").filter(function(){
