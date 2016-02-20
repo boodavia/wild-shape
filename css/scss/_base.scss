@@ -3,6 +3,9 @@ body, html{
 	padding: 0;
 	background: $gray-dark;
 	font-size: $font-size-base;
+	@include respond-to($mq-md-max) {
+		font-size: $font-size-large;
+	}
 	-webkit-backface-visibility: hidden !important;
 	display: flex;
 	align-items: center;

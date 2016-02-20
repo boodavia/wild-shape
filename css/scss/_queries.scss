@@ -1,0 +1,59 @@
+//==============================================================================
+// MEDIA QUERIES
+//
+// NOTE:
+// BE AS DEVICE AGNOSTIC AS POSSIBLE
+//
+// more reading
+// http://css-tricks.com/conditional-media-query-mixins/
+// https://coderwall.com/p/brz5-g
+// https://gist.github.com/Snugug/2493551
+//
+// This will also allow you to set a breakpoint at which IE8 and below will get
+// non-MQ styles. This is extremely helpful when building mobile first styles,
+// which we have started to do, whenever possible
+//==============================================================================
+
+// 47.9375em; = 767px;
+// 48em = 768px
+// 56.25em = 900px
+// 75.25em = 1204px
+// 99em= 1584px
+
+/* Media Queries - Standard */
+$mq-xs-min: 20em; //320
+$mq-sm-min: 25em; //400
+$mq-sm-max: 30em; //480px
+$mq-md-min: 30.0625em; //481px;
+$mq-md-max: 48em; //768
+$mq-lg-min: 48.0625em; //769
+$mq-lg-max: 64em; //1024px
+$mq-xl-min: 64.0625em; //1025px
+$mq-xl-med: 75em; //1200px
+$mq-max-grid: 80em; //1280px
+$mq-xl-max: 100em; //1600px
+
+/* Media Queries - Edge Cases */
+$mq-header-mobile-change: 41.25em; // 660px
+$mq-header-desktop-change: 75em; //1200px //81.25em; // 1300px
+
+/* MEDIA QUERIES */
+$media-queries: true !default;
+$media-query-free-breakpoint: 900px;
+
+@mixin respond-to($min-width, $max-width: false) {
+    @if $media-queries {
+            @media screen and (min-width: $min-width) {
+                @if $max-width {
+                    @media (max-width: $max-width) {
+                        @content;
+                    }
+                } @else {
+                    @content;
+                }
+            }
+    }
+    @else if $min-width <= $media-query-free-breakpoint and (not $max-width or $max-width and $max-width >= $media-query-free-breakpoint) {
+        @content;
+    }
+}
